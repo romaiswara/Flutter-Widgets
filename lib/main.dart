@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/config/config.dart';
+import 'package:flutter_widgets/constant/constant.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Material Widget',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Container(),
+      onGenerateRoute: RouteConfig.onGenerateRoute,
+      initialRoute: RouteName.main,
+      theme: ThemeConfig.theme,
     );
   }
 }
