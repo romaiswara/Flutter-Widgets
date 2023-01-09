@@ -28,12 +28,16 @@ class MainMenu {
             routeName: RouteName.bottomNavBasic,
           ),
           SubMenu(
+            name: AppConstant.shifting,
+            routeName: RouteName.bottomNavShifting,
+          ),
+          SubMenu(
             name: AppConstant.icon,
             routeName: RouteName.bottomNavIcon,
           ),
           SubMenu(
-            name: AppConstant.floating,
-            routeName: RouteName.bottomNavFloating,
+            name: AppConstant.primary,
+            routeName: RouteName.bottomNavPrimary,
           ),
         ],
         iconData: Icons.view_column,
