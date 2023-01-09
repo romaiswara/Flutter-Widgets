@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/model/model.dart';
+import 'package:flutter_widgets/config/config.dart';
 
-class BottomNavigationBasicScreen extends StatefulWidget {
-  const BottomNavigationBasicScreen({Key? key}) : super(key: key);
+import '../../model/model.dart';
+
+class BottomNavigationShiftingScreen extends StatefulWidget {
+  const BottomNavigationShiftingScreen({Key? key}) : super(key: key);
 
   @override
-  State<BottomNavigationBasicScreen> createState() =>
-      _BottomNavigationBasicScreenState();
+  State<BottomNavigationShiftingScreen> createState() =>
+      _BottomNavigationShiftingScreenState();
 }
 
-class _BottomNavigationBasicScreenState
-    extends State<BottomNavigationBasicScreen> {
+class _BottomNavigationShiftingScreenState
+    extends State<BottomNavigationShiftingScreen> {
   late int currentTab;
 
   @override
@@ -23,7 +25,7 @@ class _BottomNavigationBasicScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       body: const Center(
-        child: Text('Bottom Navigation Basic'),
+        child: Text('Bottom Navigation Shifting'),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentTab,
@@ -42,6 +44,11 @@ class _BottomNavigationBasicScreenState
         onTap: (tab) {
           onChangeTap(tab);
         },
+        type: BottomNavigationBarType.shifting,
+        selectedItemColor: ThemeConfig.theme.primaryColor,
+        unselectedItemColor: Colors.black54,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
       ),
     );
   }
