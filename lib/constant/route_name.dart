@@ -1,8 +1,9 @@
 class RouteName {
   static const String main = 'main';
   static const String bottomNavBasic = 'bottomNavBasic';
-  static const String bottomNavFloating = 'bottomNavFloating';
+  static const String bottomNavPrimary = 'bottomNavPrimary';
   static const String bottomNavIcon = 'bottomNavIcon';
+  static const String bottomNavShifting = 'bottomNavShifting';
   static const String bottomSheetBasic = 'bottomSheetBasic';
   static const String bottomSheetFilter = 'bottomSheetFilter';
   static const String bottomSheetList = 'bottomSheetList';

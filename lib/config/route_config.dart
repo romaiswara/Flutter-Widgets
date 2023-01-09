@@ -14,13 +14,17 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const BottomNavigationBasicScreen(),
         );
-      case RouteName.bottomNavFloating:
+      case RouteName.bottomNavPrimary:
         return MaterialPageRoute(
-          builder: (_) => const BottomNavigationFloatingScreen(),
+          builder: (_) => const BottomNavigationPrimaryScreen(),
         );
       case RouteName.bottomNavIcon:
         return MaterialPageRoute(
           builder: (_) => const BottomNavigationIconScreen(),
+        );
+      case RouteName.bottomNavShifting:
+        return MaterialPageRoute(
+          builder: (_) => const BottomNavigationShiftingScreen(),
         );
       case RouteName.bottomSheetBasic:
         return MaterialPageRoute(

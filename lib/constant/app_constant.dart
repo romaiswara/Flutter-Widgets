@@ -18,7 +18,9 @@ class AppConstant {
   static const String toolbar = 'toolbar';
 
   static const String basic = 'Basic';
+  static const String shifting = 'Shifting';
   static const String icon = 'Icon';
+  static const String primary = 'Primary';
   static const String floating = 'Floating';
   static const String filter = 'filter';
   static const String fabMiddle = 'Fab Middle';
