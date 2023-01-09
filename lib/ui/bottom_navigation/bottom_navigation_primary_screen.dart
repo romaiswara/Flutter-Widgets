@@ -31,7 +31,7 @@ class _BottomNavigationPrimaryScreenState
         backgroundColor: ThemeConfig.theme.primaryColor,
         elevation: 1,
         child: Icon(
-          Icons.add,
+          Icons.shopping_cart,
           color: ColorConfig.white,
         ),
         onPressed: () {},

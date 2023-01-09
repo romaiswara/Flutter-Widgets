@@ -22,8 +22,8 @@ class BottomNavBarModel {
           activeColor: ThemeConfig.theme.primaryColor,
         ),
         BottomNavBarModel(
-          title: 'Add',
-          iconData: Icons.add,
+          title: 'Cart',
+          iconData: Icons.shopping_cart,
           activeColor: ThemeConfig.theme.primaryColor,
         ),
         BottomNavBarModel(
