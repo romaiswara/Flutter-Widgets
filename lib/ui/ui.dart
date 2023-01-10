@@ -6,3 +6,4 @@ export 'picker/picker.dart';
 export 'seekbar/seekbar.dart';
 export 'snackbar/snackbar.dart';
 export 'tab/tab.dart';
+export 'toolbar/toolbar.dart';

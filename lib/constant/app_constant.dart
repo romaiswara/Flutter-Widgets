@@ -26,4 +26,5 @@ class AppConstant {
   static const String filter = 'Filter';
   static const String dateAndTime = 'Date & Time';
   static const String collapse = 'Collapse';
+  static const String collapseAndPin = 'Collapse & Pin';
 }

@@ -70,6 +70,18 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const TabCollapseScreen(),
         );
+      case RouteName.toolbarBasic:
+        return MaterialPageRoute(
+          builder: (_) => const ToolbarBasicScreen(),
+        );
+      case RouteName.toolbarCollapse:
+        return MaterialPageRoute(
+          builder: (_) => const ToolbarCollapseScreen(),
+        );
+      case RouteName.toolbarCollapseAndPin:
+        return MaterialPageRoute(
+          builder: (_) => const ToolbarCollapseAndPinScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),
