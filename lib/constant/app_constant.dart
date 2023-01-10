@@ -14,14 +14,16 @@ class AppConstant {
   static const String seekbar = 'Seekbar';
   static const String snackbar = 'Snackbar';
   static const String stepper = 'Stepper';
-  static const String tab = 'tab';
-  static const String toolbar = 'toolbar';
+  static const String tab = 'Tab';
+  static const String toolbar = 'Toolbar';
 
   static const String basic = 'Basic';
   static const String shifting = 'Shifting';
   static const String icon = 'Icon';
+  static const String textIcon = 'Text & Icon';
   static const String primary = 'Primary';
   static const String floating = 'Floating';
   static const String filter = 'Filter';
   static const String dateAndTime = 'Date & Time';
+  static const String collapse = 'Collapse';
 }

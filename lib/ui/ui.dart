@@ -5,3 +5,4 @@ export 'main/main_screen.dart';
 export 'picker/picker.dart';
 export 'seekbar/seekbar.dart';
 export 'snackbar/snackbar.dart';
+export 'tab/tab.dart';

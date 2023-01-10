@@ -12,4 +12,8 @@ class RouteName {
   static const String pickerDateTime = 'pickerDateTime';
   static const String seekbarBasic = 'seekbarBasic';
   static const String snackbarBasic = 'snackbarBasic';
+  static const String tabBasic = 'tabBasic';
+  static const String tabIcon = 'tabIcon';
+  static const String tabTextAndIcon = 'tabTextAndIcon';
+  static const String tabCollapse = 'tabCollabse';
 }

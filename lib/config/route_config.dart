@@ -54,9 +54,21 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const SeekbarBasicScreen(),
         );
-      case RouteName.snackbarBasic:
+      case RouteName.tabBasic:
         return MaterialPageRoute(
-          builder: (_) => const SnackbarBasicScreen(),
+          builder: (_) => const TabBasicScreen(),
+        );
+      case RouteName.tabIcon:
+        return MaterialPageRoute(
+          builder: (_) => const TabIconScreen(),
+        );
+      case RouteName.tabTextAndIcon:
+        return MaterialPageRoute(
+          builder: (_) => const TabTextAndIconScreen(),
+        );
+      case RouteName.tabCollapse:
+        return MaterialPageRoute(
+          builder: (_) => const TabCollapseScreen(),
         );
       default:
         return MaterialPageRoute(

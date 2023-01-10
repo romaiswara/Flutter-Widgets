@@ -109,6 +109,29 @@ class MainMenu {
         ],
         iconData: Icons.wb_iridescent,
       ),
+      MainMenu(
+        id: 2,
+        title: AppConstant.tab,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.tabBasic,
+          ),
+          SubMenu(
+            name: AppConstant.icon,
+            routeName: RouteName.tabIcon,
+          ),
+          SubMenu(
+            name: AppConstant.textIcon,
+            routeName: RouteName.tabTextAndIcon,
+          ),
+          SubMenu(
+            name: AppConstant.collapse,
+            routeName: RouteName.tabCollapse,
+          ),
+        ],
+        iconData: Icons.tab,
+      ),
     ];
   }
 }
