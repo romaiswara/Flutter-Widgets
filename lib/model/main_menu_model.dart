@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../constant/constant.dart';
 
-class MainMenu {
+class MainMenuModel {
   final int id;
   final String title;
   final List<SubMenu> subMenus;
   final IconData iconData;
   final bool isExpand;
 
-  MainMenu({
+  MainMenuModel({
     required this.id,
     required this.title,
     required this.subMenus,
@@ -17,9 +17,9 @@ class MainMenu {
     this.isExpand = false,
   });
 
-  static List<MainMenu> get allMenus {
+  static List<MainMenuModel> get allMenus {
     return [
-      MainMenu(
+      MainMenuModel(
         id: 0,
         title: AppConstant.bottomNav,
         subMenus: [
@@ -42,7 +42,7 @@ class MainMenu {
         ],
         iconData: Icons.view_column,
       ),
-      MainMenu(
+      MainMenuModel(
         id: 1,
         title: AppConstant.bottomSheet,
         subMenus: [
@@ -65,7 +65,7 @@ class MainMenu {
         ],
         iconData: Icons.call_to_action,
       ),
-      MainMenu(
+      MainMenuModel(
         id: 2,
         title: AppConstant.button,
         subMenus: [
@@ -76,7 +76,7 @@ class MainMenu {
         ],
         iconData: Icons.touch_app,
       ),
-      MainMenu(
+      MainMenuModel(
         id: 2,
         title: AppConstant.picker,
         subMenus: [
@@ -87,7 +87,7 @@ class MainMenu {
         ],
         iconData: Icons.event,
       ),
-      MainMenu(
+      MainMenuModel(
         id: 2,
         title: AppConstant.seekbar,
         subMenus: [
@@ -98,7 +98,7 @@ class MainMenu {
         ],
         iconData: Icons.tune,
       ),
-      MainMenu(
+      MainMenuModel(
         id: 2,
         title: AppConstant.snackbar,
         subMenus: [
@@ -109,7 +109,7 @@ class MainMenu {
         ],
         iconData: Icons.wb_iridescent,
       ),
-      MainMenu(
+      MainMenuModel(
         id: 2,
         title: AppConstant.tab,
         subMenus: [
@@ -131,6 +131,25 @@ class MainMenu {
           ),
         ],
         iconData: Icons.tab,
+      ),
+      MainMenuModel(
+        id: 2,
+        title: AppConstant.toolbar,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.toolbarBasic,
+          ),
+          SubMenu(
+            name: AppConstant.collapse,
+            routeName: RouteName.toolbarCollapse,
+          ),
+          SubMenu(
+            name: AppConstant.collapseAndPin,
+            routeName: RouteName.toolbarCollapseAndPin,
+          ),
+        ],
+        iconData: Icons.web_asset,
       ),
     ];
   }
