@@ -13,15 +13,15 @@ class MainScreen extends StatelessWidget {
       ),
       body: ListView(
         children: List.generate(
-          MainMenu.allMenus.length,
+          MainMenuModel.allMenus.length,
           (i) {
-            MainMenu menu = MainMenu.allMenus[i];
+            MainMenuModel menu = MainMenuModel.allMenus[i];
             return Theme(
               data: ThemeConfig.theme.copyWith(
                 dividerColor: Colors.transparent,
               ),
               child: ExpansionTile(
-                initiallyExpanded: i == 0,
+                // initiallyExpanded: i == 0,
                 tilePadding: const EdgeInsets.symmetric(
                   horizontal: 16,
                   vertical: 4,
