@@ -23,4 +23,5 @@ class AppConstant {
   static const String primary = 'Primary';
   static const String floating = 'Floating';
   static const String filter = 'Filter';
+  static const String dateAndTime = 'Date & Time';
 }

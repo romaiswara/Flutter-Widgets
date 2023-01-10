@@ -46,6 +46,10 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const ButtonBasicScreen(),
         );
+      case RouteName.pickerDateTime:
+        return MaterialPageRoute(
+          builder: (_) => const PickerDateAndTimeScreen(),
+        );
       case RouteName.seekbarBasic:
         return MaterialPageRoute(
           builder: (_) => const SeekbarBasicScreen(),

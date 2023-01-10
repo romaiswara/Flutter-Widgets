@@ -78,6 +78,17 @@ class MainMenu {
       ),
       MainMenu(
         id: 2,
+        title: AppConstant.picker,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.dateAndTime,
+            routeName: RouteName.pickerDateTime,
+          ),
+        ],
+        iconData: Icons.event,
+      ),
+      MainMenu(
+        id: 2,
         title: AppConstant.seekbar,
         subMenus: [
           SubMenu(
