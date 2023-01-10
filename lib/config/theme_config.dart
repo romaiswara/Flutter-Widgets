@@ -9,13 +9,13 @@ class ThemeConfig {
       primary: ColorConfig.primary,
       onPrimary: ColorConfig.white,
       secondary: ColorConfig.secondary,
-      onSecondary: ColorConfig.white,
+      onSecondary: ColorConfig.black,
       error: ColorConfig.red,
       onError: ColorConfig.white,
       background: ColorConfig.background,
       onBackground: ColorConfig.black,
-      surface: ColorConfig.green,
-      onSurface: ColorConfig.yellow,
+      surface: ColorConfig.white,
+      onSurface: ColorConfig.black,
     ),
   );
 }
