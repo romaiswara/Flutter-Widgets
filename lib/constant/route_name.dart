@@ -9,7 +9,4 @@ class RouteName {
   static const String bottomSheetList = 'bottomSheetList';
   static const String bottomSheetMenu = 'bottomSheetMenu';
   static const String buttonBasic = 'buttonBasic';
-  static const String buttonFabMiddle = 'buttonFabMiddle';
-  static const String buttonFabMore = 'buttonFabMore';
-  static const String buttonFabMoreText = 'buttonFabMoreText';
 }

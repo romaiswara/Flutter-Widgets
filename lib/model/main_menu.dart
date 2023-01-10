@@ -73,18 +73,6 @@ class MainMenu {
             name: AppConstant.basic,
             routeName: RouteName.buttonBasic,
           ),
-          SubMenu(
-            name: AppConstant.fabMiddle,
-            routeName: RouteName.buttonFabMiddle,
-          ),
-          SubMenu(
-            name: AppConstant.fabMore,
-            routeName: RouteName.buttonFabMore,
-          ),
-          SubMenu(
-            name: AppConstant.fabMoreText,
-            routeName: RouteName.buttonFabMoreText,
-          ),
         ],
         iconData: Icons.touch_app,
       ),

@@ -46,18 +46,6 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const ButtonBasicScreen(),
         );
-      case RouteName.buttonFabMiddle:
-        return MaterialPageRoute(
-          builder: (_) => const ButtonFabMiddleScreen(),
-        );
-      case RouteName.buttonFabMore:
-        return MaterialPageRoute(
-          builder: (_) => const ButtonFabMoreScreen(),
-        );
-      case RouteName.buttonFabMoreText:
-        return MaterialPageRoute(
-          builder: (_) => const ButtonFabMoreTextScreen(),
-        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),
