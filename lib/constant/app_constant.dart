@@ -22,7 +22,7 @@ class AppConstant {
   static const String icon = 'Icon';
   static const String primary = 'Primary';
   static const String floating = 'Floating';
-  static const String filter = 'filter';
+  static const String filter = 'Filter';
   static const String fabMiddle = 'Fab Middle';
   static const String fabMore = 'Fab More';
   static const String fabMoreText = 'Fab More Text';
