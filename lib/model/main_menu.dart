@@ -76,6 +76,17 @@ class MainMenu {
         ],
         iconData: Icons.touch_app,
       ),
+      MainMenu(
+        id: 2,
+        title: AppConstant.seekbar,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.seekbarBasic,
+          ),
+        ],
+        iconData: Icons.tune,
+      ),
     ];
   }
 }

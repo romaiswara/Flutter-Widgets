@@ -46,6 +46,10 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const ButtonBasicScreen(),
         );
+      case RouteName.seekbarBasic:
+        return MaterialPageRoute(
+          builder: (_) => const SeekbarBasicScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),
