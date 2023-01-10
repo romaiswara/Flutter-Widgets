@@ -11,4 +11,5 @@ class RouteName {
   static const String buttonBasic = 'buttonBasic';
   static const String pickerDateTime = 'pickerDateTime';
   static const String seekbarBasic = 'seekbarBasic';
+  static const String snackbarBasic = 'snackbarBasic';
 }

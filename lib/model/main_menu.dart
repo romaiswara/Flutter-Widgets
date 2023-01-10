@@ -98,6 +98,17 @@ class MainMenu {
         ],
         iconData: Icons.tune,
       ),
+      MainMenu(
+        id: 2,
+        title: AppConstant.snackbar,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.snackbarBasic,
+          ),
+        ],
+        iconData: Icons.wb_iridescent,
+      ),
     ];
   }
 }

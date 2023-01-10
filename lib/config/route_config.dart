@@ -54,6 +54,10 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const SeekbarBasicScreen(),
         );
+      case RouteName.snackbarBasic:
+        return MaterialPageRoute(
+          builder: (_) => const SnackbarBasicScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),

@@ -12,7 +12,7 @@ class AppConstant {
   static const String picker = 'Picker';
   static const String progress = 'Progress';
   static const String seekbar = 'Seekbar';
-  static const String snackbarToast = 'Snackbar & Toast';
+  static const String snackbar = 'Snackbar';
   static const String stepper = 'Stepper';
   static const String tab = 'tab';
   static const String toolbar = 'toolbar';
