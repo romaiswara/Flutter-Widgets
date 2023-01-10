@@ -136,11 +136,13 @@ class ButtonBasicScreen extends StatelessWidget {
             children: [
               const FloatingActionButton(
                 onPressed: null,
+                heroTag: 'disable',
                 child: Icon(Icons.touch_app),
               ),
               const SizedBox(width: 8),
               FloatingActionButton(
                 onPressed: () {},
+                heroTag: 'primary',
                 foregroundColor: ColorConfig.white,
                 backgroundColor: ColorConfig.primary,
                 child: const Icon(Icons.touch_app),
@@ -148,6 +150,7 @@ class ButtonBasicScreen extends StatelessWidget {
               const SizedBox(width: 8),
               FloatingActionButton(
                 onPressed: () {},
+                heroTag: 'secondary',
                 foregroundColor: ColorConfig.white,
                 backgroundColor: ColorConfig.secondary,
                 child: const Icon(Icons.touch_app),
