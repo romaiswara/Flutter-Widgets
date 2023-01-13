@@ -4,6 +4,7 @@ import 'config.dart';
 
 class ThemeConfig {
   static ThemeData theme = ThemeData(
+    primaryColor: ColorConfig.primary,
     colorScheme: ColorScheme(
       brightness: Brightness.light,
       primary: ColorConfig.primary,

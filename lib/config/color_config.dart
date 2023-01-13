@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ColorConfig {
-  static Color primary = Colors.blue;
-  static Color secondary = Colors.pink;
+  static Color primary = const Color(0xffC3B091);
+  static Color secondary = const Color(0xffEBE6DD);
   static Color background = Colors.white;
 
   static Color white = Colors.white;
