@@ -27,4 +27,6 @@ class AppConstant {
   static const String dateAndTime = 'Date & Time';
   static const String collapse = 'Collapse';
   static const String collapseAndPin = 'Collapse & Pin';
+  static const String timeline = 'Timeline';
+  static const String overlap = 'Overlap';
 }

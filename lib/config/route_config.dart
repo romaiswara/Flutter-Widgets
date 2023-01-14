@@ -82,6 +82,18 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const ToolbarCollapseAndPinScreen(),
         );
+      case RouteName.cardBasic:
+        return MaterialPageRoute(
+          builder: (_) => const CardBasicScreen(),
+        );
+      case RouteName.cardTimeline:
+        return MaterialPageRoute(
+          builder: (_) => const CardTimelineScreen(),
+        );
+      case RouteName.cardOverlap:
+        return MaterialPageRoute(
+          builder: (_) => const CardOverlapScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),

@@ -19,4 +19,7 @@ class RouteName {
   static const String toolbarBasic = 'toolbarBasic';
   static const String toolbarCollapse = 'toolbarCollapse';
   static const String toolbarCollapseAndPin = 'toolbarCollapseAndPin';
+  static const String cardBasic = 'cardBasic';
+  static const String cardTimeline = 'cardTimeline';
+  static const String cardOverlap = 'cardOverlap';
 }

@@ -78,6 +78,25 @@ class MainMenuModel {
       ),
       MainMenuModel(
         id: 2,
+        title: AppConstant.card,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.cardBasic,
+          ),
+          SubMenu(
+            name: AppConstant.timeline,
+            routeName: RouteName.cardTimeline,
+          ),
+          SubMenu(
+            name: AppConstant.overlap,
+            routeName: RouteName.cardOverlap,
+          ),
+        ],
+        iconData: Icons.note,
+      ),
+      MainMenuModel(
+        id: 2,
         title: AppConstant.picker,
         subMenus: [
           SubMenu(
