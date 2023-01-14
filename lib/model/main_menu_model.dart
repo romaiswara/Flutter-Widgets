@@ -97,6 +97,17 @@ class MainMenuModel {
       ),
       MainMenuModel(
         id: 2,
+        title: AppConstant.chip,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.chipBasic,
+          ),
+        ],
+        iconData: Icons.note,
+      ),
+      MainMenuModel(
+        id: 2,
         title: AppConstant.picker,
         subMenus: [
           SubMenu(

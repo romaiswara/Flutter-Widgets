@@ -94,6 +94,10 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const CardOverlapScreen(),
         );
+      case RouteName.chipBasic:
+        return MaterialPageRoute(
+          builder: (_) => const ChipBasicScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),

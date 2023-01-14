@@ -22,4 +22,5 @@ class RouteName {
   static const String cardBasic = 'cardBasic';
   static const String cardTimeline = 'cardTimeline';
   static const String cardOverlap = 'cardOverlap';
+  static const String chipBasic = 'chipBasic';
 }
