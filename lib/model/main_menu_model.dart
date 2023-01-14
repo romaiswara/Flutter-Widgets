@@ -123,6 +123,25 @@ class MainMenuModel {
       ),
       MainMenuModel(
         id: 2,
+        title: AppConstant.grid,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.gridBasic,
+          ),
+          SubMenu(
+            name: AppConstant.singleLine,
+            routeName: RouteName.gridSingleLine,
+          ),
+          SubMenu(
+            name: AppConstant.twoLine,
+            routeName: RouteName.gridTwoLine,
+          ),
+        ],
+        iconData: Icons.apps,
+      ),
+      MainMenuModel(
+        id: 2,
         title: AppConstant.picker,
         subMenus: [
           SubMenu(

@@ -106,6 +106,18 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const ExpandTicketScreen(),
         );
+      case RouteName.gridBasic:
+        return MaterialPageRoute(
+          builder: (_) => GridBasicScreen(),
+        );
+      case RouteName.gridSingleLine:
+        return MaterialPageRoute(
+          builder: (_) => GridSingleLineScreen(),
+        );
+      case RouteName.gridTwoLine:
+        return MaterialPageRoute(
+          builder: (_) => GridTwoLineScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),

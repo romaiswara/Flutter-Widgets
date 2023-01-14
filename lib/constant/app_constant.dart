@@ -30,4 +30,6 @@ class AppConstant {
   static const String timeline = 'Timeline';
   static const String overlap = 'Overlap';
   static const String ticket = 'Ticket';
+  static const String singleLine = 'Single Line';
+  static const String twoLine = 'Two Line';
 }

@@ -25,4 +25,7 @@ class RouteName {
   static const String chipBasic = 'chipBasic';
   static const String expandBasic = 'expandBasic';
   static const String expandTicket = 'expandTicket';
+  static const String gridBasic = 'gridBasic';
+  static const String gridSingleLine = 'gridSingleLine';
+  static const String gridTwoLine = 'gridTwoLine';
 }
