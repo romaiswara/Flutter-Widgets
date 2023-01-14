@@ -152,7 +152,6 @@ class CardOverlapScreen extends StatelessWidget {
       ),
       color: Colors.white,
       elevation: 2,
-      clipBehavior: Clip.antiAliasWithSaveLayer,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         child: Column(
