@@ -157,6 +157,17 @@ class MainMenuModel {
       ),
       MainMenuModel(
         id: 2,
+        title: AppConstant.menu,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.menuBasic,
+          ),
+        ],
+        iconData: Icons.reorder,
+      ),
+      MainMenuModel(
+        id: 2,
         title: AppConstant.picker,
         subMenus: [
           SubMenu(

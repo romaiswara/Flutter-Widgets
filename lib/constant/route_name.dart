@@ -30,4 +30,7 @@ class RouteName {
   static const String gridTwoLine = 'gridTwoLine';
   static const String progressBasic = 'progressBasic';
   static const String progressPullToRefresh = 'progressPullToRefresh';
+  static const String dialogBasic = 'dialogBasic';
+  static const String dialogCustom = 'dialogCustom';
+  static const String menuBasic = 'menuBasic';
 }

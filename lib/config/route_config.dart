@@ -134,6 +134,10 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const DialogCustomScreen(),
         );
+      case RouteName.menuBasic:
+        return MaterialPageRoute(
+          builder: (_) => MenuBasicScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),

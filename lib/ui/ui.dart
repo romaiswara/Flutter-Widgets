@@ -7,6 +7,7 @@ export 'dialog/dialog.dart';
 export 'expand/expand.dart';
 export 'grid/grid.dart';
 export 'main/main_screen.dart';
+export 'menu/menu.dart';
 export 'picker/picker.dart';
 export 'progress/progress.dart';
 export 'seekbar/seekbar.dart';
