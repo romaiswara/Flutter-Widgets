@@ -126,6 +126,14 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const ProgressPullToRefreshScreen(),
         );
+      case RouteName.dialogBasic:
+        return MaterialPageRoute(
+          builder: (_) => const DialogBasicScreen(),
+        );
+      case RouteName.dialogCustom:
+        return MaterialPageRoute(
+          builder: (_) => const DialogCustomScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),

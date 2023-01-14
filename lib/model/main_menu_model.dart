@@ -108,6 +108,21 @@ class MainMenuModel {
       ),
       MainMenuModel(
         id: 2,
+        title: AppConstant.dialog,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.dialogBasic,
+          ),
+          SubMenu(
+            name: AppConstant.custom,
+            routeName: RouteName.dialogCustom,
+          ),
+        ],
+        iconData: Icons.picture_in_picture,
+      ),
+      MainMenuModel(
+        id: 2,
         title: AppConstant.expand,
         subMenus: [
           SubMenu(

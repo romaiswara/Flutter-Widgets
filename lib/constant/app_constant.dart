@@ -33,4 +33,5 @@ class AppConstant {
   static const String singleLine = 'Single Line';
   static const String twoLine = 'Two Line';
   static const String pullToRefresh = 'Pull To Refresh';
+  static const String custom = 'Custom';
 }
