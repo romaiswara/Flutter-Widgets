@@ -153,6 +153,21 @@ class MainMenuModel {
       ),
       MainMenuModel(
         id: 2,
+        title: AppConstant.progress,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.progressBasic,
+          ),
+          SubMenu(
+            name: AppConstant.pullToRefresh,
+            routeName: RouteName.progressPullToRefresh,
+          ),
+        ],
+        iconData: Icons.settings_backup_restore,
+      ),
+      MainMenuModel(
+        id: 2,
         title: AppConstant.seekbar,
         subMenus: [
           SubMenu(

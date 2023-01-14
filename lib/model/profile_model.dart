@@ -28,4 +28,62 @@ class ProfileModel {
           email: 'angel@gmail.com',
         ),
       ];
+
+  static List<ProfileModel> get liverpoolProfiles => [
+        ProfileModel(
+          name: 'Allison',
+          image: 'assets/images/no_profile.png',
+          email: '',
+        ),
+        ProfileModel(
+          name: 'Joe Gomez',
+          image: 'assets/images/no_profile.png',
+          email: '',
+        ),
+        ProfileModel(
+          name: 'Virgil Van Dijk',
+          image: 'assets/images/no_profile.png',
+          email: '',
+        ),
+        ProfileModel(
+          name: 'Andrew Robertson',
+          image: 'assets/images/no_profile.png',
+          email: '',
+        ),
+        ProfileModel(
+          name: 'Trent Alexander-Arnold',
+          image: 'assets/images/no_profile.png',
+          email: '',
+        ),
+        ProfileModel(
+          name: 'Jordan Henderson',
+          image: 'assets/images/no_profile.png',
+          email: '',
+        ),
+        ProfileModel(
+          name: 'Harvey Elliot',
+          image: 'assets/images/no_profile.png',
+          email: '',
+        ),
+        ProfileModel(
+          name: 'Fabio Carvalho',
+          image: 'assets/images/no_profile.png',
+          email: '',
+        ),
+        ProfileModel(
+          name: 'Mohammed Salah',
+          image: 'assets/images/no_profile.png',
+          email: '',
+        ),
+        ProfileModel(
+          name: 'Diogo Jota',
+          image: 'assets/images/no_profile.png',
+          email: '',
+        ),
+        ProfileModel(
+          name: 'Darwin Nunez',
+          image: 'assets/images/no_profile.png',
+          email: '',
+        ),
+      ];
 }

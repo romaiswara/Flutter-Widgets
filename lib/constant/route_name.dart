@@ -28,4 +28,6 @@ class RouteName {
   static const String gridBasic = 'gridBasic';
   static const String gridSingleLine = 'gridSingleLine';
   static const String gridTwoLine = 'gridTwoLine';
+  static const String progressBasic = 'progressBasic';
+  static const String progressPullToRefresh = 'progressPullToRefresh';
 }

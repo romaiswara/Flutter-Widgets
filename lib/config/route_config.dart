@@ -118,6 +118,14 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => GridTwoLineScreen(),
         );
+      case RouteName.progressBasic:
+        return MaterialPageRoute(
+          builder: (_) => const ProgressBasicScreen(),
+        );
+      case RouteName.progressPullToRefresh:
+        return MaterialPageRoute(
+          builder: (_) => const ProgressPullToRefreshScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),
