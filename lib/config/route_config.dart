@@ -138,6 +138,26 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => MenuBasicScreen(),
         );
+      case RouteName.listBasic:
+        return MaterialPageRoute(
+          builder: (_) => ListBasicScreen(),
+        );
+      case RouteName.listSection:
+        return MaterialPageRoute(
+          builder: (_) => const ListSectionScreen(),
+        );
+      case RouteName.listExpand:
+        return MaterialPageRoute(
+          builder: (_) => ListExpandScreen(),
+        );
+      case RouteName.listDraggable:
+        return MaterialPageRoute(
+          builder: (_) => const ListDraggableScreen(),
+        );
+      case RouteName.listSwipe:
+        return MaterialPageRoute(
+          builder: (_) => const ListSwipeScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),

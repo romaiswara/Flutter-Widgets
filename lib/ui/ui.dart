@@ -6,6 +6,7 @@ export 'chip/chip.dart';
 export 'dialog/dialog.dart';
 export 'expand/expand.dart';
 export 'grid/grid.dart';
+export 'list/list.dart';
 export 'main/main_screen.dart';
 export 'menu/menu.dart';
 export 'picker/picker.dart';

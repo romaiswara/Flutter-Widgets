@@ -157,6 +157,33 @@ class MainMenuModel {
       ),
       MainMenuModel(
         id: 2,
+        title: AppConstant.list,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.listBasic,
+          ),
+          SubMenu(
+            name: AppConstant.section,
+            routeName: RouteName.listSection,
+          ),
+          SubMenu(
+            name: AppConstant.expand,
+            routeName: RouteName.listExpand,
+          ),
+          SubMenu(
+            name: AppConstant.draggable,
+            routeName: RouteName.listDraggable,
+          ),
+          SubMenu(
+            name: AppConstant.swipe,
+            routeName: RouteName.listSwipe,
+          ),
+        ],
+        iconData: Icons.view_stream,
+      ),
+      MainMenuModel(
+        id: 2,
         title: AppConstant.menu,
         subMenus: [
           SubMenu(

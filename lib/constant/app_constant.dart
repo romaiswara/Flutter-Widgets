@@ -34,4 +34,7 @@ class AppConstant {
   static const String twoLine = 'Two Line';
   static const String pullToRefresh = 'Pull To Refresh';
   static const String custom = 'Custom';
+  static const String section = 'Section';
+  static const String draggable = 'Draggable';
+  static const String swipe = 'Swipe';
 }

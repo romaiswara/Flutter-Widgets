@@ -33,4 +33,9 @@ class RouteName {
   static const String dialogBasic = 'dialogBasic';
   static const String dialogCustom = 'dialogCustom';
   static const String menuBasic = 'menuBasic';
+  static const String listBasic = 'listBasic';
+  static const String listSection = 'listSection';
+  static const String listExpand = 'listExpand';
+  static const String listDraggable = 'listDraggable';
+  static const String listSwipe = 'listSwipe';
 }
