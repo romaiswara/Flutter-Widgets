@@ -29,4 +29,5 @@ class AppConstant {
   static const String collapseAndPin = 'Collapse & Pin';
   static const String timeline = 'Timeline';
   static const String overlap = 'Overlap';
+  static const String ticket = 'Ticket';
 }

@@ -104,7 +104,22 @@ class MainMenuModel {
             routeName: RouteName.chipBasic,
           ),
         ],
-        iconData: Icons.note,
+        iconData: Icons.label,
+      ),
+      MainMenuModel(
+        id: 2,
+        title: AppConstant.expand,
+        subMenus: [
+          SubMenu(
+            name: AppConstant.basic,
+            routeName: RouteName.expandBasic,
+          ),
+          SubMenu(
+            name: AppConstant.ticket,
+            routeName: RouteName.expandTicket,
+          ),
+        ],
+        iconData: Icons.arrow_downward,
       ),
       MainMenuModel(
         id: 2,

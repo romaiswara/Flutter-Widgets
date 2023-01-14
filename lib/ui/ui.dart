@@ -3,6 +3,7 @@ export 'bottom_sheet/bottom_sheet.dart';
 export 'button/button.dart';
 export 'card/card.dart';
 export 'chip/chip.dart';
+export 'expand/expand.dart';
 export 'main/main_screen.dart';
 export 'picker/picker.dart';
 export 'seekbar/seekbar.dart';

@@ -98,6 +98,14 @@ class RouteConfig {
         return MaterialPageRoute(
           builder: (_) => const ChipBasicScreen(),
         );
+      case RouteName.expandBasic:
+        return MaterialPageRoute(
+          builder: (_) => const ExpandBasicScreen(),
+        );
+      case RouteName.expandTicket:
+        return MaterialPageRoute(
+          builder: (_) => const ExpandTicketScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),
