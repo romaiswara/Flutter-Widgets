@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../model/model.dart';
+import 'content_widget.dart';
 
 class TabIconScreen extends StatefulWidget {
   const TabIconScreen({Key? key}) : super(key: key);
@@ -47,13 +48,7 @@ class _TabIconScreenState extends State<TabIconScreen>
       ),
       body: TabBarView(
         controller: _tabController,
-        children: TabModel.tabs
-            .map(
-              (tab) => Center(
-                child: Text('Section ${tab.title}'),
-              ),
-            )
-            .toList(),
+        children: TabModel.tabs.map((tab) => ContentWidget()).toList(),
       ),
     );
   }
