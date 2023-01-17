@@ -4,8 +4,9 @@ import 'config.dart';
 
 class ThemeConfig {
   static ThemeData theme = ThemeData(
+    fontFamily: 'Montserrat',
     primaryColor: ColorConfig.primary,
-    colorScheme: ColorScheme(
+    colorScheme: const ColorScheme(
       brightness: Brightness.light,
       primary: ColorConfig.primary,
       onPrimary: ColorConfig.white,
