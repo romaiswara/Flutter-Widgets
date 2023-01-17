@@ -1,29 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/data/dummy_data.dart';
 
 class GridSingleLineScreen extends StatelessWidget {
   GridSingleLineScreen({Key? key}) : super(key: key);
 
-  final List<String> _allImages = [
-    'assets/images/photo_1.jpg',
-    'assets/images/photo_2.jpg',
-    'assets/images/photo_1.jpg',
-    'assets/images/photo_2.jpg',
-    'assets/images/photo_1.jpg',
-    'assets/images/photo_2.jpg',
-    'assets/images/photo_1.jpg',
-    'assets/images/photo_2.jpg',
-    'assets/images/photo_1.jpg',
-    'assets/images/photo_2.jpg',
-    'assets/images/photo_1.jpg',
-    'assets/images/photo_2.jpg',
-    'assets/images/photo_1.jpg',
-    'assets/images/photo_2.jpg',
-    'assets/images/photo_1.jpg',
-    'assets/images/photo_2.jpg',
-    'assets/images/photo_1.jpg',
-    'assets/images/photo_2.jpg',
-    'assets/images/photo_1.jpg',
-  ];
+  final List<String> _allImages = List.from(DummyData.photos)..shuffle();
 
   @override
   Widget build(BuildContext context) {
