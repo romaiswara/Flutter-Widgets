@@ -8,13 +8,23 @@ class BottomSheetFilterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Bottom Sheet Filter Screen'),
+      ),
       body: const Center(
-        child: Text('Bottom Sheet Filter'),
+        child: Text(
+          'Press button below',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w300,
+            color: Colors.black45,
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: ThemeConfig.theme.primaryColor,
         elevation: 1,
-        child: Icon(
+        child: const Icon(
           Icons.arrow_upward,
           color: ColorConfig.white,
         ),
