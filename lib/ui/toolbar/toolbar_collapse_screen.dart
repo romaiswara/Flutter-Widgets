@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/config/color_config.dart';
+import 'package:flutter_widgets/constant/constant.dart';
 
 class ToolbarCollapseScreen extends StatelessWidget {
   const ToolbarCollapseScreen({Key? key}) : super(key: key);
@@ -13,9 +15,16 @@ class ToolbarCollapseScreen extends StatelessWidget {
               expandedHeight: 250.0,
               floating: false,
               pinned: false,
-              flexibleSpace: const FlexibleSpaceBar(
+              flexibleSpace: FlexibleSpaceBar(
                 centerTitle: true,
-                background: FlutterLogo(),
+                background: Container(
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/photo_15.jpg'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
               ),
               actions: [
                 IconButton(
@@ -35,8 +44,40 @@ class ToolbarCollapseScreen extends StatelessWidget {
             ),
           ];
         },
-        body: const Center(
-          child: Text('Hi!'),
+        body: ListView(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+          children: [
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                decoration: BoxDecoration(
+                  color: ColorConfig.primary,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: const Text(
+                  'Minimalist',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              StringConstant.shortLoremIpsum,
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              StringConstant.veryLongLoremIpsum,
+              style: TextStyle(),
+            ),
+          ],
         ),
       ),
     );
