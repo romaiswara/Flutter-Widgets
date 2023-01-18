@@ -44,7 +44,8 @@ class _ProgressBasicScreenState extends State<ProgressBasicScreen> {
             SizedBox(
               height: 5,
               child: LinearProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(ColorConfig.primary),
+                valueColor:
+                    const AlwaysStoppedAnimation<Color>(ColorConfig.primary),
                 backgroundColor: Colors.grey[300],
               ),
             ),
@@ -55,7 +56,8 @@ class _ProgressBasicScreenState extends State<ProgressBasicScreen> {
               height: 5,
               child: LinearProgressIndicator(
                 value: _progressValue,
-                valueColor: AlwaysStoppedAnimation<Color>(ColorConfig.primary),
+                valueColor:
+                    const AlwaysStoppedAnimation<Color>(ColorConfig.primary),
                 backgroundColor: Colors.grey[300],
               ),
             ),
@@ -76,8 +78,8 @@ class _ProgressBasicScreenState extends State<ProgressBasicScreen> {
                     const Text("Indetermine"),
                     const SizedBox(height: 8),
                     CircularProgressIndicator(
-                      valueColor:
-                          AlwaysStoppedAnimation<Color>(ColorConfig.primary),
+                      valueColor: const AlwaysStoppedAnimation<Color>(
+                          ColorConfig.primary),
                       backgroundColor: Colors.grey[300],
                     ),
                   ],
@@ -89,8 +91,8 @@ class _ProgressBasicScreenState extends State<ProgressBasicScreen> {
                     const SizedBox(height: 8),
                     CircularProgressIndicator(
                       value: _progressValue,
-                      valueColor:
-                          AlwaysStoppedAnimation<Color>(ColorConfig.primary),
+                      valueColor: const AlwaysStoppedAnimation<Color>(
+                          ColorConfig.primary),
                       backgroundColor: Colors.grey[300],
                     ),
                   ],
@@ -105,13 +107,15 @@ class _ProgressBasicScreenState extends State<ProgressBasicScreen> {
 
   void updateProgress() {
     Timer.periodic(const Duration(seconds: 1), (Timer t) {
-      setState(() {
-        _progressValue += 0.2;
-        // we "finish" downloading here
-        if (_progressValue > 1.0) {
-          _progressValue = 0.0;
-        }
-      });
+      if (mounted) {
+        setState(() {
+          _progressValue += 0.2;
+          // we "finish" downloading here
+          if (_progressValue > 1.0) {
+            _progressValue = 0.0;
+          }
+        });
+      }
     });
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/config/config.dart';
 import 'package:flutter_widgets/constant/constant.dart';
-
-import '../../model/model.dart';
+import 'package:flutter_widgets/data/dummy_data.dart';
 
 class ProgressPullToRefreshScreen extends StatefulWidget {
   const ProgressPullToRefreshScreen({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class ProgressPullToRefreshScreen extends StatefulWidget {
 
 class _ProgressPullToRefreshScreenState
     extends State<ProgressPullToRefreshScreen> {
-  final List<ProfileModel> _listProfiles = ProfileModel.profiles;
+  final List<String> _images = List.from(DummyData.photos);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class _ProgressPullToRefreshScreenState
         child: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           children: List.generate(
-            _listProfiles.length,
+            _images.length,
             (index) => Card(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
@@ -37,7 +37,8 @@ class _ProgressPullToRefreshScreenState
                 child: Row(
                   children: [
                     CircleAvatar(
-                      backgroundImage: AssetImage(_listProfiles[index].image),
+                      backgroundImage: AssetImage(_images[index]),
+                      backgroundColor: ColorConfig.brownLight,
                     ),
                     const SizedBox(width: 8),
                     Expanded(
@@ -45,7 +46,7 @@ class _ProgressPullToRefreshScreenState
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Text(
-                            _listProfiles[index].name,
+                            _images[index].split('/').last,
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 18,
@@ -64,7 +65,7 @@ class _ProgressPullToRefreshScreenState
                       ),
                     ),
                     const SizedBox(width: 8),
-                    const Icon(Icons.phone),
+                    const Icon(Icons.chevron_right),
                   ],
                 ),
               ),
@@ -77,7 +78,8 @@ class _ProgressPullToRefreshScreenState
 
   Future<void> onPullRefresh() async {
     await Future.delayed(const Duration(seconds: 2));
-    _listProfiles.addAll(ProfileModel.liverpoolProfiles);
+    _images.clear();
+    _images.addAll(List.from(DummyData.photos)..shuffle());
     setState(() {});
   }
 }
