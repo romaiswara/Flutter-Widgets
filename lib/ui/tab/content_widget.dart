@@ -14,7 +14,7 @@ class ContentWidget extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       children: [
-        /// new release. show 2 image
+        /// new release. show 2 image using row
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: const [
@@ -35,21 +35,25 @@ class ContentWidget extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 12),
-        GridView.count(
-          physics: const NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
-          crossAxisCount: 2,
+        Row(
           children: List.generate(
             2,
-            (index) => _photoWidget(
-              photo: newReleases[index],
+            (index) => Expanded(
+              flex: 1,
+              child: Container(
+                margin: EdgeInsets.only(left: index == 0 ? 0 : 4),
+                child: _photoWidget(
+                  photo: newReleases[index],
+                  height: 180,
+                ),
+              ),
             ),
           ),
         ),
 
         const SizedBox(height: 20),
 
-        /// card recommended. show 3 image
+        /// card recommended. show 3 image using row
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: const [
@@ -70,21 +74,25 @@ class ContentWidget extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 8),
-        GridView.count(
-          physics: const NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
-          crossAxisCount: 3,
+        Row(
           children: List.generate(
             3,
-            (index) => _photoWidget(
-              photo: recommended[index],
+            (index) => Expanded(
+              flex: 1,
+              child: Container(
+                margin: EdgeInsets.only(left: index == 0 ? 0 : 4),
+                child: _photoWidget(
+                  photo: recommended[index],
+                  height: 180,
+                ),
+              ),
             ),
           ),
         ),
 
         const SizedBox(height: 20),
 
-        /// card top rated. show 4 image
+        /// card top rated. show 4 image using grid
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: const [
@@ -109,6 +117,7 @@ class ContentWidget extends StatelessWidget {
           physics: const NeverScrollableScrollPhysics(),
           shrinkWrap: true,
           crossAxisCount: 2,
+          crossAxisSpacing: 4,
           children: List.generate(
             2,
             (index) => _photoWidget(
@@ -120,9 +129,9 @@ class ContentWidget extends StatelessWidget {
     );
   }
 
-  Widget _photoWidget({required String photo, double? width}) {
+  Widget _photoWidget({required String photo, double? height}) {
     return SizedBox(
-      width: width ?? 180,
+      height: height,
       child: Card(
         elevation: 2,
         child: Column(
