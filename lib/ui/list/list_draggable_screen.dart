@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/config/config.dart';
 import 'package:flutter_widgets/constant/constant.dart';
-import 'package:flutter_widgets/model/model.dart';
+import 'package:flutter_widgets/data/dummy_data.dart';
 
 class ListDraggableScreen extends StatefulWidget {
   const ListDraggableScreen({Key? key}) : super(key: key);
@@ -10,7 +11,7 @@ class ListDraggableScreen extends StatefulWidget {
 }
 
 class _ListDraggableScreenState extends State<ListDraggableScreen> {
-  final List<ProfileModel> _listProfiles = ProfileModel.liverpoolProfiles;
+  final List<String> _images = List.from(DummyData.photos);
 
   @override
   Widget build(BuildContext context) {
@@ -22,12 +23,12 @@ class _ListDraggableScreenState extends State<ListDraggableScreen> {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         onReorder: (int oldIndex, int newIndex) {
           if (newIndex > oldIndex) newIndex -= 1;
-          final ProfileModel item = _listProfiles.removeAt(oldIndex);
-          _listProfiles.insert(newIndex, item);
+          final String item = _images.removeAt(oldIndex);
+          _images.insert(newIndex, item);
           setState(() {});
         },
         children: List.generate(
-          _listProfiles.length,
+          _images.length,
           (index) => Card(
             key: Key('$index'),
             shape: RoundedRectangleBorder(
@@ -39,7 +40,8 @@ class _ListDraggableScreenState extends State<ListDraggableScreen> {
               child: Row(
                 children: [
                   CircleAvatar(
-                    backgroundImage: AssetImage(_listProfiles[index].image),
+                    backgroundImage: AssetImage(_images[index]),
+                    backgroundColor: ColorConfig.brownLight,
                   ),
                   const SizedBox(width: 8),
                   Expanded(
@@ -47,7 +49,7 @@ class _ListDraggableScreenState extends State<ListDraggableScreen> {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         Text(
-                          _listProfiles[index].name,
+                          _images[index].split('/').last,
                           style: TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 18,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/config/config.dart';
 import 'package:flutter_widgets/constant/constant.dart';
-import 'package:flutter_widgets/model/model.dart';
+import 'package:flutter_widgets/data/dummy_data.dart';
 
 class ListSectionScreen extends StatefulWidget {
   const ListSectionScreen({Key? key}) : super(key: key);
@@ -10,27 +11,23 @@ class ListSectionScreen extends StatefulWidget {
 }
 
 class _ListSectionScreenState extends State<ListSectionScreen> {
-  final List<ProfileModel> _listProfiles = ProfileModel.liverpoolProfiles;
+  final List<String> _images = List.from(DummyData.photos);
 
-  final List<String> _position = ['GK', 'DEF', 'MID', 'FWD'];
+  final List<String> months = ['Jan', 'Feb', 'Mar', 'Apr'];
 
-  final List<ProfileSection> _listProfileSections = [];
+  final List<String> allImagesWithMonth = [];
+
+  bool isSection(String value) => months.contains(value);
 
   @override
   void initState() {
-    for (String pos in _position) {
-      /// add section
-      _listProfileSections.add(
-        ProfileSection(section: true, position: pos),
-      );
+    allImagesWithMonth.addAll(_images);
 
-      ///  add player on this position
-      _listProfileSections.addAll(
-        _listProfiles
-            .where((element) => element.position == pos)
-            .map((e) => ProfileSection(section: false, profileModel: e))
-            .toList(),
-      );
+    /// add month
+    int sectionIndex = 0;
+    for (int i = 0; i < months.length; i++) {
+      allImagesWithMonth.insert(sectionIndex, months[i]);
+      sectionIndex = sectionIndex + 5;
     }
 
     super.initState();
@@ -45,12 +42,12 @@ class _ListSectionScreenState extends State<ListSectionScreen> {
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         children: List.generate(
-          _listProfileSections.length,
-          (index) => _listProfileSections[index].section
+          allImagesWithMonth.length,
+          (index) => isSection(allImagesWithMonth[index])
               ? Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    _listProfileSections[index].position!,
+                    allImagesWithMonth[index],
                     style: Theme.of(context).textTheme.headline5,
                   ),
                 )
@@ -65,7 +62,9 @@ class _ListSectionScreenState extends State<ListSectionScreen> {
                       children: [
                         CircleAvatar(
                           backgroundImage: AssetImage(
-                              _listProfileSections[index].profileModel!.image),
+                            allImagesWithMonth[index],
+                          ),
+                          backgroundColor: ColorConfig.brownLight,
                         ),
                         const SizedBox(width: 8),
                         Expanded(
@@ -73,7 +72,7 @@ class _ListSectionScreenState extends State<ListSectionScreen> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Text(
-                                _listProfileSections[index].profileModel!.name,
+                                allImagesWithMonth[index].split('/').last,
                                 style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   fontSize: 18,
@@ -98,16 +97,4 @@ class _ListSectionScreenState extends State<ListSectionScreen> {
       ),
     );
   }
-}
-
-class ProfileSection {
-  final bool section;
-  final String? position;
-  final ProfileModel? profileModel;
-
-  ProfileSection({
-    required this.section,
-    this.position,
-    this.profileModel,
-  });
 }

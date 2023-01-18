@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/config/config.dart';
 import 'package:flutter_widgets/constant/constant.dart';
-import 'package:flutter_widgets/model/model.dart';
+import 'package:flutter_widgets/data/dummy_data.dart';
 
 class ListBasicScreen extends StatelessWidget {
   ListBasicScreen({Key? key}) : super(key: key);
 
-  final List<ProfileModel> _listProfiles = ProfileModel.liverpoolProfiles;
+  final List<String> _images = List.from(DummyData.photos);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class ListBasicScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         children: List.generate(
-          _listProfiles.length,
+          _images.length,
           (index) => Card(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8),
@@ -27,7 +28,8 @@ class ListBasicScreen extends StatelessWidget {
               child: Row(
                 children: [
                   CircleAvatar(
-                    backgroundImage: AssetImage(_listProfiles[index].image),
+                    backgroundImage: AssetImage(_images[index]),
+                    backgroundColor: ColorConfig.brownLight,
                   ),
                   const SizedBox(width: 8),
                   Expanded(
@@ -35,7 +37,7 @@ class ListBasicScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         Text(
-                          _listProfiles[index].name,
+                          _images[index].split('/').last,
                           style: TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 18,
