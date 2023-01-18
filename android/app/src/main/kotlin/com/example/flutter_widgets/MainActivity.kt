@@ -1,4 +1,4 @@
-package com.example.flutter_widgets
+package cingin.studio.flutterminimalist
 
 import io.flutter.embedding.android.FlutterActivity
 
