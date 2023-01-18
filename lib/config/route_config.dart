@@ -6,6 +6,10 @@ import '../ui/ui.dart';
 class RouteConfig {
   static Route onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
+      case RouteName.splash:
+        return MaterialPageRoute(
+          builder: (_) => const SplashScreen(),
+        );
       case RouteName.main:
         return MaterialPageRoute(
           builder: (_) => const MainScreen(),

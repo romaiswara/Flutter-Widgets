@@ -13,5 +13,6 @@ export 'picker/picker.dart';
 export 'progress/progress.dart';
 export 'seekbar/seekbar.dart';
 export 'snackbar/snackbar.dart';
+export 'splash/splash_screen.dart';
 export 'tab/tab.dart';
 export 'toolbar/toolbar.dart';
