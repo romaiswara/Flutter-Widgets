@@ -1,16 +1,40 @@
-# flutter_widgets
+# Flutter Widget Minimalist 
 
-A new Flutter project.
+Flutter Widget Minimalist adalah aplikasi demo yang berisi kumpulan-kumpulan Flutter Material Widget dengan tema Minimalist.
+Semua asset gambar yang digunakan dimiliki oleh Chaira A.
 
-## Getting Started
+    Flutter version: 3.3.8
+    Dart Version: 2.18.4
+    Font: Montserrat
 
-This project is a starting point for a Flutter application.
+## 👀 Implementasi Widget  
 
-A few resources to get you started if this is your first Flutter project:
+* Bottom Navigation Bar
+* Bottom Sheet
+* Button
+* Card
+* Chip
+* Dialog
+* Expand
+* Grid
+* List
+* Menu
+* Picker
+* Progress
+* Seekbar
+* Snackbar
+* Tab
+* Toolbar
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📸 ScreenShots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="ss/ss.png"/>
+
+## 	🤠 Author(s)
+
+**Roma Akbar Iswara**
+[![Twitter Follow](https://img.shields.io/twitter/follow/romaiswara.svg?style=social)](https://twitter.com/romaiswara)
+
+## 🎁 Thanks For(s)
+
+[Chaira A](https://www.youtube.com/@ChairaA)
