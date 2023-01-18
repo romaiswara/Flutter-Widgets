@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/extension/extension.dart';
 
 import '../../config/config.dart';
 import '../../constant/constant.dart';
@@ -63,9 +62,12 @@ class BottomSheetBasicScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text(
+                  child: const Text(
                     "CLOSE",
-                    style: context.textButton(color: ColorConfig.secondary),
+                    style: TextStyle(
+                      color: ColorConfig.secondary,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
                 ElevatedButton(

@@ -42,17 +42,17 @@ class TimelineModel {
           likes: '10,884 likes',
           comments: [
             CommentModel(
-              image: 'assets/images/people_1.jpeg',
+              image: 'assets/images/people_1.jpg',
               name: 'Steven',
               description: StringConstant.mediumLoremIpsum,
             ),
             CommentModel(
-              image: 'assets/images/people_2.jpeg',
+              image: 'assets/images/people_2.jpg',
               name: 'Angel',
               description: StringConstant.mediumLoremIpsum,
             ),
             CommentModel(
-              image: 'assets/images/people_2.jpeg',
+              image: 'assets/images/people_2.jpg',
               name: 'Angel',
               description: StringConstant.shortLoremIpsum,
             ),

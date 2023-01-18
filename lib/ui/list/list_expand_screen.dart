@@ -38,7 +38,7 @@ class ListExpandScreen extends StatelessWidget {
                       title: Text(StringConstant.mediumLoremIpsum),
                     ),
                     TextButton(
-                      child: const Text('Send Message'),
+                      child: const Text('Edit Description'),
                       onPressed: () {},
                     ),
                   ],
