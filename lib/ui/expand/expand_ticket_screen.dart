@@ -28,7 +28,7 @@ class ExpandTicketScreen extends StatelessWidget {
                   ),
                   const SizedBox(width: 7),
                   const Spacer(),
-                  Text(
+                  const Text(
                     "CXDT2887A",
                     style: TextStyle(
                       fontSize: 16,
@@ -62,8 +62,8 @@ class ExpandTicketScreen extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
+                    const Padding(
+                      padding: EdgeInsets.symmetric(
                           horizontal: 16, vertical: 16),
                       child: Icon(
                         Icons.flight,
@@ -153,7 +153,7 @@ class ExpandTicketScreen extends StatelessWidget {
                           Container(
                             width: 15,
                             height: 15,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: ColorConfig.primary,
                               shape: BoxShape.circle,
                             ),
@@ -167,13 +167,13 @@ class ExpandTicketScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const [
                             Text(
-                              "Solo (SOC)",
+                              "Padang (PDG)",
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                               ),
                             ),
                             Text(
-                              "Adi Soemarmo",
+                              "Minangkabau International Airport",
                               style: TextStyle(
                                 fontSize: 12,
                                 color: Colors.grey,
@@ -224,7 +224,7 @@ class ExpandTicketScreen extends StatelessWidget {
                 dividerColor: Colors.transparent,
               ),
               child: ExpansionTile(
-                leading: Icon(
+                leading: const Icon(
                   Icons.flight,
                   color: ColorConfig.primary,
                 ),
@@ -270,7 +270,7 @@ class ExpandTicketScreen extends StatelessWidget {
                 dividerColor: Colors.transparent,
               ),
               child: ExpansionTile(
-                leading: Icon(
+                leading: const Icon(
                   Icons.person,
                   color: ColorConfig.primary,
                 ),
@@ -297,13 +297,14 @@ class ExpandTicketScreen extends StatelessWidget {
                 ),
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                     child: Column(
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: const [
-                            Text('1. Mr. Lionel Messi'),
+                            Text('1. Mr. John Doe'),
                             SizedBox(width: 8),
                             Chip(
                               label: Text('Adult'),
@@ -313,7 +314,7 @@ class ExpandTicketScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: const [
-                            Text('2. Mrs. Agnes Mo'),
+                            Text('2. Mrs. Laura Smith'),
                             SizedBox(width: 8),
                             Chip(
                               label: Text('Adult'),
@@ -323,7 +324,7 @@ class ExpandTicketScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: const [
-                            Text('3. Steven'),
+                            Text('3. John Smith'),
                             SizedBox(width: 8),
                             Chip(
                               label: Text('Infant'),
