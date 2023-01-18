@@ -31,7 +31,7 @@ class CardBasicScreen extends StatelessWidget {
                 child: _card2(
                   context,
                   title: 'Ini Card 1',
-                  path: 'assets/images/photo_1.jpg',
+                  path: 'assets/images/photo_4.jpg',
                 ),
               ),
               const SizedBox(width: 8),
@@ -39,7 +39,7 @@ class CardBasicScreen extends StatelessWidget {
                 child: _card2(
                   context,
                   title: 'Ini Card 2',
-                  path: 'assets/images/photo_2.jpg',
+                  path: 'assets/images/photo_5.jpg',
                 ),
               ),
             ],
