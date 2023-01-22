@@ -14,6 +14,7 @@ class ContentWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        SizedBox(height: MediaQuery.of(context).padding.top),
         Container(
           height: kToolbarHeight,
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
